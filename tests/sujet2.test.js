@@ -1,6 +1,6 @@
 import {describe, it} from 'mocha'
 import { expect } from 'chai'
-import {countMaxBobsleigh} from '../sujet_5kyu.js'
+import {countMaxBobsleigh} from '../sujet2.js'
 
 describe('Function that return the maximum of bobsleighs that can be placed in a park', ()=>{
     it('Should return 0 if there is no place to put any bobsleigh', ()=>{
