@@ -11,8 +11,8 @@ describe('Function that delete the useless path', ()=>{
 
     it('Should return an empty array if all of the directions are useless', ()=>{
         expect(reduceDirections(['NORD', ' SUD', 'EST', 'OUEST'])).to.deep.equal([]);
-        expect(reduceDirections(['NORD', 'SUD']));
-        expect(reduceDirections(['EST', 'OUEST']));
+        expect(reduceDirections(['NORD', 'SUD'])).to.deep.equal([]);
+        expect(reduceDirections(['EST', 'OUEST'])).to.deep.equal([]);
     });
 
     it('Should return the same array if ther is no useless direction', ()=>{
