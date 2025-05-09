@@ -1,4 +1,8 @@
 const getLastDelegation = (delegations) => {
+    if (!delegations || delegations.length == 0){
+        throw new Error("Array cannot be empty, null or undefined");
+    }
+
     let split = [];
     let max;
     let result;
@@ -26,3 +30,5 @@ const getLastDelegation = (delegations) => {
     } 
     return result
 }
+
+console.log(getLastDelegation([]));

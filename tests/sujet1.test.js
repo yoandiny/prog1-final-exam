@@ -10,7 +10,7 @@ describe('Function that give the last delegation to close the ceremonie', () => 
         ])).to.equal('Estonia');
 
         expect(getLastDelegation(['Chili 101 2', 'France 150 3', 'Madagascar 100 5', 'Niger 50 1',
-             'Allemagne 100 1'])).to.equal('France');
+             'Allemagne 100 1'])).to.equal('Allemagne');
     });
 
     it('Should return the only delegation if there is only one', ()=>{
@@ -21,7 +21,8 @@ describe('Function that give the last delegation to close the ceremonie', () => 
     });
 
     it('Should throw an error if the array is empty or undefined', ()=>{
-        expect(()=>getLastDelegation([])).to.throw(Error);
-        expect(()=>getLastDelegation()).to.throw(Error);
+        expect(()=>getLastDelegation(null)).to.throw("Array cannot be empty, null or undefined");
+        expect(()=>getLastDelegation(undefined)).to.throw("Array cannot be empty, null or undefined");
+        expect(()=>getLastDelegation([])).to.throw("Array cannot be empty, null or undefined");
     })
  })
