@@ -1,8 +1,7 @@
 {
-  "name": "tests",
+  "name": "prog1-final-exam",
   "version": "1.0.0",
   "main": "sujet1.test.js",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +9,9 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.2.2"
+  }
 }

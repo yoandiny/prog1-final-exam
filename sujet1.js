@@ -1,4 +1,4 @@
-const getLastDelegation = (delegations) => {
+export const getLastDelegation = (delegations) => {
     if (!delegations || delegations.length == 0){
         throw new Error("Array cannot be empty, null or undefined");
     }
@@ -30,5 +30,3 @@ const getLastDelegation = (delegations) => {
     } 
     return result
 }
-
-console.log(getLastDelegation([]));
