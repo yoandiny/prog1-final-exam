@@ -1,6 +1,6 @@
 import {describe, it} from 'mocha'
 import { expect } from 'chai'
-import { reduceDirections } from '../sujet_4thkuy.js'
+import { reduceDirections } from '../sujet3.js'
 
 
 describe('Function that delete the useless path', ()=>{
@@ -29,3 +29,4 @@ describe('Function that delete the useless path', ()=>{
         expect(()=>reduceDirections()).to.throw(Error);
     });
 })
+
