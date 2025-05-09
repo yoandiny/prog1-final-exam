@@ -21,7 +21,8 @@ describe('Function that give the last delegation to close the ceremonie', () => 
     });
 
     it('Should throw an error if the array is empty or undefined', ()=>{
-        expect(()=>getLastDelegation(null)).to.throw("Array cannot be null or undefined");
-        expect(()=>getLastDelegation(undefined)).to.throw("Array cannot be null or undefined");
+        expect(()=>getLastDelegation(null)).to.throw("Array cannot be empty, null or undefined");
+        expect(()=>getLastDelegation(undefined)).to.throw("Array cannot be empty, null or undefined");
+        expect(()=>getLastDelegation([])).to.throw("Array cannot be empty, null or undefined");
     })
  })

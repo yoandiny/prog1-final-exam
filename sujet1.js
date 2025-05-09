@@ -1,7 +1,6 @@
 const getLastDelegation = (delegations) => {
-    if (!delegations){
-        throw new Error("Array cannot be null or undefined");
-        
+    if (!delegations || delegations.length == 0){
+        throw new Error("Array cannot be empty, null or undefined");
     }
 
     let split = [];
@@ -31,3 +30,5 @@ const getLastDelegation = (delegations) => {
     } 
     return result
 }
+
+console.log(getLastDelegation([]));
