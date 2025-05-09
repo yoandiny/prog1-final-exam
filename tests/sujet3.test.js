@@ -29,3 +29,4 @@ describe('Function that delete the useless path', ()=>{
         expect(()=>reduceDirections()).to.throw(Error);
     });
 })
+
