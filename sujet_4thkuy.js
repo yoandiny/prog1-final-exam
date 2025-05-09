@@ -11,7 +11,7 @@ const directionsInfo = (tabDirection) =>{
     }, {})
     return infoDirection
 }  
-const reduceDirections = (directions) => { 
+export const reduceDirections = (directions) => { 
     let originInfoDirection = directionsInfo(directions)
     let result = []
     let diffNS = (originInfoDirection['NORD'] - originInfoDirection['SUD'])

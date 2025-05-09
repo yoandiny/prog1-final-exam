@@ -1,6 +1,6 @@
 import {describe, it} from 'mocha'
 import { expect } from 'chai'
-import {getLastDelegation} from './sujet1.js'
+import {getLastDelegation} from '../sujet1.js'
 
 
 describe('Function that give the last delegation to close the ceremonie', () => { 
