@@ -1,5 +1,6 @@
-const directions = ["NORD","SUD","SUD","EST","OUEST","NORD","OUEST","NORD"]
-const directions1 = ["NORD","SUD","EST","OUEST"]
+// const directions = ["NORD","SUD","SUD","EST","EST","OUEST","NORD","OUEST","SUD"]
+// const directions1 = ["NORD","SUD","EST","OUEST"]
+// const directions2 = undefined
 const directionsInfo = (tabDirection) =>{
     let infoDirection = tabDirection.reduce((acc, valActu) => {
         if( acc[valActu]){
@@ -12,6 +13,9 @@ const directionsInfo = (tabDirection) =>{
     return infoDirection
 }  
 const reduceDirections = (directions) => { 
+    if(!directions){
+        return []
+    }
     let originInfoDirection = directionsInfo(directions)
     let result = []
     let diffNS = (originInfoDirection['NORD'] - originInfoDirection['SUD'])
@@ -34,6 +38,9 @@ const reduceDirections = (directions) => {
             result.push("EST")
         }
     }    
+    return result
 }
+console.log(
+    reduceDirections(directions)
+);
 
-reduceDirections(directions)
